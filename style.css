@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background: #005f73;
+    color: #edf6f9;
+    padding: 20px 40px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    position: relative; 
+}
+
+/* Title Container Styles */
+.header-main {
+    text-align: center; 
+}
+
+.header-main h1 {
+    margin: 0;
+    padding-bottom: 5px; 
+}
+
+/* Image Styles */
+.header-image {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+}
+
+.header-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px; 
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #edf6f9;
+    padding: 10px;
+    display: block; 
+}
+
+/* Section Styles */
+section {
+    margin: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #005f73;
+    color: #edf6f9;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        padding: 20px; 
+    }
+
+    .header-image {
+        position: static; 
+        margin-bottom: 20px; 
+        display: block; 
+        width: 100%; 
+    }
+
+    .header-image img {
+        max-width: 50%; 
+        margin: 0 auto; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+    }
+
+    nav ul li {
+        margin: 5px 0; 
+    }
+}
